@@ -1,5 +1,5 @@
 # Chaos
-
+chaos is a multiagent application. inspired by the jade library.
 ##### create an agent
 a simple way to create an Agent without any behaviour
 ```golang

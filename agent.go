@@ -4,12 +4,13 @@
 package chaos
 
 import (
-	"chaos/globals"
-	"chaos/message"
 	"fmt"
 	"log"
 	"sync"
 	"time"
+
+	"github.com/JusticeN/chaos/globals"
+	"github.com/JusticeN/chaos/message"
 )
 
 // Behaviour ...

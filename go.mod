@@ -1,4 +1,4 @@
-module chaos
+module github.com/JusticeN/chaos
 
 go 1.13
 

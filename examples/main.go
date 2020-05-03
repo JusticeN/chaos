@@ -1,11 +1,14 @@
 package main
 
 import (
-	"chaos"
-	"chaos/message"
+	// "chaos"
+	// "chaos/message"
 	"fmt"
 	"math/rand"
 	"time"
+
+	"github.com/JusticeN/chaos"
+	"github.com/JusticeN/chaos/message"
 )
 
 func shootOnce(agent *chaos.Agent) error {

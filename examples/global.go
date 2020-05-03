@@ -1,9 +1,10 @@
 package main
 
 import (
-	"chaos"
 	"fmt"
 	"time"
+
+	"github.com/JusticeN/chaos"
 )
 
 const timeSnapshot string = "timeSnapshot"

@@ -1,8 +1,9 @@
 package main
 
 import (
-	"chaos"
 	"fmt"
+
+	"github.com/JusticeN/chaos"
 )
 
 // you can declare an Action to later add as behaviour like this

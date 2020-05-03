@@ -1,7 +1,7 @@
 package main
 
 import (
-	"chaos"
+	"github.com/JusticeN/chaos"
 )
 
 func simple() {

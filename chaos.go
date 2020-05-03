@@ -18,7 +18,9 @@ import (
 // RegisterAgent register a new Agent
 func RegisterAgent(a *Agent) {
 	// AgentSotre()[a.Name] = a
-	a.ID = genID()
+	if len(a.ID) == 0 {
+		a.ID = genID()
+	}
 	GetAgentStoreInstance().Add(a)
 }
 func genID() string {
@@ -77,4 +79,10 @@ func RegisterAndRunAgent(wg *sync.WaitGroup, agent *Agent) {
 	RegisterAgent(agent)
 	agent.doSetup()
 	StartAgent(wg, agent)
+}
+
+// StopAgent ..
+func StopAgent(agentID string) {
+	agent := GetAgentStoreInstance().Get(agentID)
+	agent.stop()
 }

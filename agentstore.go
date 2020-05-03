@@ -30,7 +30,14 @@ func GetAgentStoreInstance() *AgentStore {
 func (s *AgentStore) Add(a *Agent) {
 	s.Lock()
 	defer s.Unlock()
-	s.agents[a.Name] = a
+	s.agents[a.ID] = a
+}
+
+// Get ...
+func (s *AgentStore) Get(aid string) *Agent {
+	// s.Lock()
+	// defer s.Unlock()
+	return s.agents[aid]
 }
 
 // List ...

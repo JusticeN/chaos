@@ -71,3 +71,10 @@ func setUpAllAgent() {
 		agent.doSetup()
 	}
 }
+
+// RegisterAndRunAgent ...
+func RegisterAndRunAgent(wg *sync.WaitGroup, agent *Agent) {
+	RegisterAgent(agent)
+	agent.doSetup()
+	StartAgent(wg, agent)
+}

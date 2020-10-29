@@ -1,6 +1,7 @@
 # Chaos
-chaos is a multiagent application. inspired by the jade library.
-##### create an agent
+chaos is a multiagent application Inspired by the jade library. https://en.wikipedia.org/wiki/Java_Agent_Development_Framework 
+i try to build a POC to use the concurency model of Go and make the developement easier.
+##### How to create an agent
 a simple way to create an Agent without any behaviour
 ```golang
 // main
@@ -15,10 +16,10 @@ func main() {
 
 ```
 
-##### create an agent with Behaviour
+##### Create an agent with Behaviour
 for each agent a behaviour can be added in the setup method
 there are different type of beahviours
-## one shot behaviour
+###### one shot behaviour
 one shot behaviour have these signature ` func(agent *chaos.Agent) error`
 and are added like this `agent.AddOneShotBehaviour(...)`
 
@@ -47,11 +48,14 @@ func behaviourExample() {
 }
 
 ```
-## Cylic behaviour
-## waker Behabiour
-## Ticker Behaviour
-
+###### Cylic behaviour
+TODO: in progress
+###### Waker Behabiour
+TODO: in progress
+###### Ticker Behaviour
+TODO: in progress
 
 #### Agent can send Message
-
+TODO: in progress
 #### Agents have global state
+TODO: in progress
